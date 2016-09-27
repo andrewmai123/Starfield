@@ -1,19 +1,32 @@
 //your code here
 void setup()
 {
-	//your code here
+	size(400,400);
 }
 void draw()
 {
-	//your code here
+	NormalParticle bob = new NormalParticle();
 }
 class NormalParticle
 {
-	//your code here
+	double dX, dY, dTheta, dSpeed;
+
+	NormalParticle()
+	{
+		dX = 200;
+		dY = 200;
+	}
+	void show();
+	{
+		fill(0);
+		ellipse(dX,dY,200,200);
+	}
+
 }
 interface Particle
 {
-	//your code here
+	public void show();
+	public void move();
 }
 class OddballParticle //uses an interface
 {
